@@ -1,0 +1,6 @@
+# cargo 编译输出
+**/target/
+
+# rustc 编译输出
+**/*.exe
+**/*.pdb
