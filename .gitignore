@@ -4,3 +4,6 @@
 # rustc 编译输出
 **/*.exe
 **/*.pdb
+
+# 测试用文件
+**/generated/
