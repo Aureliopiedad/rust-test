@@ -12,9 +12,9 @@ extern "system" fn find_window(window: HWND, _: LPARAM) -> BOOL {
         let len = GetWindowTextW(window, &mut text);
         let text = String::from_utf16_lossy(&text[..len as usize]);
 
-        if !text.is_empty() && text == "企业微信" {
+        if !text.is_empty() && IsWindowVisible(window).into() {
             println!("{text}");
-            return false.into();
+            return true.into();
         }
 
         true.into()
